@@ -37,5 +37,6 @@ echo
 cp ~/bootstrap-scripts/config/root_authorized_keys ~/.ssh/authorized_keys
 
 echo
-echo "For security reasons, you must manually set a password for the 'admin' user."
-echo
+echo "For security reasons, you must manually set a password for the new user."
+echo "Run: passwd <username>"
+echo 
