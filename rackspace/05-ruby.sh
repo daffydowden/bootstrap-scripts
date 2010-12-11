@@ -1,11 +1,16 @@
 #
-# Ubuntu 8.0.4
+# Ubuntu 10.04 - Lucid
 #
 # Compiles Ruby 1.8.7-p72 and Rubygems 1.3.2 from source
 #
 
+# Resynchronise the package index from sources (/etc/apt/sources.list)
 apt-get update -y
 
+# Install 
+# libssl-dev - development files for OpenSSL
+# libreadline5-dev - Aids consistency of UI across CLI programs
+# zlib1g-dev - deflate compression library support
 apt-get install -y libssl-dev libreadline5-dev zlib1g-dev
 
 # Download Ruby from source, compile, and install.
