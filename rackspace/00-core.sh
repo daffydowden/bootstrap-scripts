@@ -19,7 +19,7 @@ ln -sf /usr/share/zoneinfo/Europe/London /etc/localtime
 # add user, add this user to sudoers
 export USERNAME=richard
 sh add_user.sh
-echo "$USERNAME\tALL=(ALL) ALL" >> /etc/sudoers
+echo "$USERNAME ALL=(ALL) ALL" >> /etc/sudoers
 
 # Make the .ssh folder in home directory
 # create authkeys files, set correct permissions
@@ -37,5 +37,6 @@ echo
 cp ~/bootstrap-scripts/config/root_authorized_keys ~/.ssh/authorized_keys
 
 echo
-echo "For security reasons, you must manually set a password for the 'admin' user."
-echo
+echo "For security reasons, you must manually set a password for the new user."
+echo "Run: passwd <username>"
+echo 

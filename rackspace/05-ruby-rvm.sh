@@ -33,3 +33,6 @@ ruby -v
 
 # Create and use the global gemset
 rvm use 1.9.2@global --create
+rvm info
+# Install Bundler
+gem install bundler
