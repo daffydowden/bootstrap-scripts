@@ -1,5 +1,5 @@
 #
-# Ubuntu 8.0.4
+# Ubuntu 10.04
 #
 # Installs mongrel.
 # Also adds a user called "app" that your Rails application runs as

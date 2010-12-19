@@ -1,5 +1,5 @@
 #
-# Ubuntu 8.0.4
+# Ubuntu 10.04
 #
 # Installs memcached. Installs memcache-client gem if Rubygems is installed
 #

@@ -8,7 +8,7 @@ help = <<HELP
 $0 is a friendly VirtualHost generating script
  
 Basic Command Line Usage:
-  add_host.rb --host=foo.com --ports=5000-5010
+  #{__FILE__} --host=foo.com --ports=5000-5010
   Options:
 HELP
 
