@@ -2,13 +2,13 @@
 
 desc "Setup core"
 task "setup-core" do
-  `sh 00-core.sh`
-  `sh 10-misc.sh`
+  'bash 00-core.sh'
+  'bash 10-misc.sh'
 end  
 
 desc "Setup Ruby & Rubygems"
 task "setup-ruby" => ["setup-core"] do
-  `sh 05-ruby.sh`
+  'sh 05-ruby-rvm.sh'
 end
 
 desc "Setup everything"
