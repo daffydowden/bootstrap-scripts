@@ -1,9 +1,9 @@
 #
-# Ubuntu 8.0.4
+# Ubuntu 10.04
 #
 # Installs Sendmail.
 #
 
-apt-get update -y
+aptitude update -y
 
-apt-get install -y sendmail
+aptitude install -y sendmail

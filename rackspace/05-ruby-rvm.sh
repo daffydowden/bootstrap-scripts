@@ -5,13 +5,13 @@
 #
 
 # Resynchronise the package index from sources (/etc/apt/sources.list)
-apt-get update -y
+aptitude update -y
 
 # Install the following:
 # libssl-dev - development files for OpenSSL
 # libreadline5-dev - Aids consistency of UI across CLI programs
 # zlib1g-dev - deflate compression library support
-apt-get install -y libssl-dev libreadline5-dev zlib1g-dev
+aptitude install -y libssl-dev libreadline5-dev zlib1g-dev
 
 # Download RVM and install.
 bash < <( curl -L http://bit.ly/rvm-install-system-wide )

@@ -5,13 +5,13 @@
 #
 
 # Resynchronise the package index from sources (/etc/apt/sources.list)
-apt-get update -y
+aptitude update -y
 
 # Install 
 # libssl-dev - development files for OpenSSL
 # libreadline5-dev - Aids consistency of UI across CLI programs
 # zlib1g-dev - deflate compression library support
-apt-get install -y libssl-dev libreadline5-dev zlib1g-dev
+aptitude install -y libssl-dev libreadline5-dev zlib1g-dev
 
 # Download Ruby from source, compile, and install.
 RUBY_VER=1.8.7-p174

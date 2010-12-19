@@ -1,12 +1,12 @@
 #
-# Ubuntu 8.0.4
+# Ubuntu 10.04
 #
 # Installs GSL with Ruby bindings
 #
 
-apt-get update -y
+aptitude update -y
 
-apt-get install -y gsl-bin libgsl0-dev
+aptitude install -y gsl-bin libgsl0-dev
 
 # Download GSL from source, compile, and install.
 GSL_VER=1.10.3

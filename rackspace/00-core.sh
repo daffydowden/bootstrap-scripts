@@ -5,13 +5,13 @@
 #
 
 # Resynchronise the package index from sources (/etc/apt/sources.list)
-apt-get update -y
+aptitude update -y
 
 # Installs the basics
 # build-essentails - for building debian packages
 # gcc - GNU C Compiler
 # g++ - GNU C++ Compiler
-apt-get install -y build-essential gcc g++
+aptitude install -y build-essential gcc g++
 
 # setup timezone to London
 ln -sf /usr/share/zoneinfo/Europe/London /etc/localtime

@@ -1,12 +1,12 @@
 #
-# Ubuntu 8.0.4
+# Ubuntu 10.04
 #
 # Installs FreeImage. Installs image_science gem if Rubygems is installed
 #
 
-apt-get update -y
+aptitude update -y
 
-apt-get install -y libfreeimage-dev libfreeimage3 
+aptitude install -y libfreeimage-dev libfreeimage3 
 
 if [ -e "`which gem`" ]
 then
