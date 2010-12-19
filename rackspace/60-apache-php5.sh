@@ -1,7 +1,7 @@
 #
 # Ubuntu 10.04
 #
-# Installs PHP5 on Apache
+# Installs PHP5 as Apache module
 #
 
 aptitude update -y
