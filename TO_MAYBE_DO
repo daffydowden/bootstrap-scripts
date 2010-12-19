@@ -6,3 +6,6 @@
   * Cronjob backups
   * Iptables
   * Setup an admin password
+  * Rake tasks
+    * Choose installation type
+    * Prompt for options
