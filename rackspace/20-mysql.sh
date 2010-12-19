@@ -1,5 +1,5 @@
 #
-# Ubuntu 8.0.4
+# Ubuntu 10.04
 #
 # Installs MySQL packages. Installs MySQL gem if Rubygems is installed
 #
