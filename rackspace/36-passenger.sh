@@ -10,7 +10,7 @@ PASSENGER_VER=3.0.1
 if [ ! -n "$SERVERNAME" ]
 then 
   echo "Must set 'ServerName' for Apache"
-  echo "SERVERNAME=example.com `basename $0`"
+  echo "export SERVERNAME=example.com"
   exit
 fi
 
@@ -22,10 +22,14 @@ bash add_user.sh
 gem install passenger -v $PASSENGER_VER
 passenger-install-apache2-module -a
 
-# echo "\
-# ServerName $SERVERNAME
-# 
-# LoadModule passenger_module /usr/local/lib/ruby/gems/1.8/gems/passenger-$PASSENGER_VER/ext/apache2/mod_passenger.so
-# PassengerRoot /usr/local/lib/ruby/gems/1.8/gems/passenger-$PASSENGER_VER
-# PassengerRuby /usr/local/bin/ruby
-# " >> /etc/apache2/apache2.conf
+echo "\
+ServerName $SERVERNAME
+
+LoadModule passenger_module /usr/local/rvm/gems/ruby-1.9.2-p0@global/gems/passenger-$PASSENGER_VER/ext/apache2/mod_passenger.so
+PassengerRoot /usr/local/rvm/gems/ruby-1.9.2-p0@global/gems/passenger-$PASSENGER_VER
+PassengerRuby /usr/local/rvm/wrappers/ruby-1.9.2-p0@global/ruby
+" >> /etc/apache2/apache2.conf
+
+
+/usr/local/rvm/gems/ruby-1.9.2-p0@global/gems/passenger-3.0.1/ext/apache2/mod_passenger.so
+/usr/local/rvm/gems/ruby-1.9.2-p0@global/gems/passenger-3.0.1/ext/apache2
