@@ -17,7 +17,7 @@ aptitude update -y
 # sqlite3 - light-weight SQL database engine and development files
 # libxml2 - wrapper to handle xml files and development files
 # libxslt1.1 - XSLT transformations and development files
-aptitude install -y locate git-core git-doc tree vim-nox byobu nmap sqlite3 libsqlite3-dev libxml2 libxml2-dev libxslt1.1 libxslt1-dev 
+aptitude install -y locate git-core git-doc tree vim-nox byobu nmap sqlite3 libsqlite3-dev libxml2 libxml2-dev libxslt1.1 libxslt1-dev htop libcurl4-openssl-dev
 
 # Updates the file name database used by locate
 updatedb
