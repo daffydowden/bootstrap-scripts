@@ -25,6 +25,9 @@ cd ~
 echo 'if [[ -s "/usr/local/lib/rvm" ]]  ; then source "/usr/local/lib/rvm" ; fi' >> .bashrc
 echo 'if [[ -s "/usr/local/lib/rvm" ]]  ; then source "/usr/local/lib/rvm" ; fi' >> /home/richard/.bashrc
 
+# Reload RVM commands into current shell
+source ~/.bashrc
+
 # Install default ruby
 rvm install 1.9.2 --default
 
