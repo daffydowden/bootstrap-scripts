@@ -32,7 +32,10 @@ echo 'Installed Ruby version'
 ruby -v
 
 # Create and use the global gemset
-rvm use 1.9.2@global --create
+rvm use 1.9.2@global --default --create
+
+# We'll use $GEM_HOME for passenger install
 rvm info
+
 # Install Bundler
 gem install bundler

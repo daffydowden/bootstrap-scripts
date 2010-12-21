@@ -25,11 +25,11 @@ passenger-install-apache2-module -a
 echo "\
 ServerName $SERVERNAME
 
-LoadModule passenger_module /usr/local/rvm/gems/ruby-1.9.2-p0@global/gems/passenger-$PASSENGER_VER/ext/apache2/mod_passenger.so
-PassengerRoot /usr/local/rvm/gems/ruby-1.9.2-p0@global/gems/passenger-$PASSENGER_VER
-PassengerRuby /usr/local/rvm/wrappers/ruby-1.9.2-p0@global/ruby
+LoadModule passenger_module $GEMDIR/gems/passenger-$PASSENGER_VER/ext/apache2/mod_passenger.so
+PassengerRoot $GEMDIR/gems/passenger-$PASSENGER_VER
+PassengerRuby /usr/local/rvm/wrappers/default/ruby
+# If this Ruby fails use this: PassengerRuby /usr/local/rvm/wrappers/ruby-1.9.2-p0@global/ruby
 " >> /etc/apache2/apache2.conf
-
 
 /usr/local/rvm/gems/ruby-1.9.2-p0@global/gems/passenger-3.0.1/ext/apache2/mod_passenger.so
 /usr/local/rvm/gems/ruby-1.9.2-p0@global/gems/passenger-3.0.1/ext/apache2
