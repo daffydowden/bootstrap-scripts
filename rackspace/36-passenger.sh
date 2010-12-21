@@ -21,6 +21,11 @@ rvm gemset use global
 export USERNAME=app
 bash add_user.sh
 gem install passenger -v $PASSENGER_VER
+
+# Reload .bashrc
+source ~/.bashrc
+
+#Install Passenger Module
 passenger-install-apache2-module -a
 
 echo "\
