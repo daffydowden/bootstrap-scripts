@@ -24,9 +24,10 @@ gem install passenger -v $PASSENGER_VER
 passenger-install-apache2-module -a
 
 echo "\
+# Phusion Passenger Details
 ServerName $SERVERNAME
 
 LoadModule passenger_module $GEM_HOME/gems/passenger-$PASSENGER_VER/ext/apache2/mod_passenger.so
 PassengerRoot $GEM_HOME/gems/passenger-$PASSENGER_VER
-PassengerRuby $rvm_path/wrappers/$(echo rvm-prompt)/ruby
+PassengerRuby $rvm_path/wrappers/$(echo $(rvm-prompt))/ruby
 " >> /etc/apache2/apache2.conf
